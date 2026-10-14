@@ -136,6 +136,18 @@
       <a name="label" val="Data"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="8" loc="(107,825)" name="Text">
+      <a name="text" val="+Addr = 8-bit Address"/>
+    </comp>
+    <comp lib="8" loc="(108,732)" name="Text">
+      <a name="text" val="xx01: (MEM) READ"/>
+    </comp>
+    <comp lib="8" loc="(111,667)" name="Text">
+      <a name="text" val="Small Control Guide:"/>
+    </comp>
+    <comp lib="8" loc="(248,911)" name="Text">
+      <a name="text" val="Both: +Data = To-WR"/>
+    </comp>
     <comp lib="8" loc="(290,460)" name="Text">
       <a name="text" val="Control"/>
     </comp>
@@ -144,6 +156,30 @@
     </comp>
     <comp lib="8" loc="(295,520)" name="Text">
       <a name="text" val="Data"/>
+    </comp>
+    <comp lib="8" loc="(363,698)" name="Text">
+      <a name="text" val="IO R/W"/>
+    </comp>
+    <comp lib="8" loc="(376,752)" name="Text">
+      <a name="text" val="xx00: (IO) WR"/>
+    </comp>
+    <comp lib="8" loc="(384,735)" name="Text">
+      <a name="text" val="xx11: (IO) READ"/>
+    </comp>
+    <comp lib="8" loc="(394,779)" name="Text">
+      <a name="text" val="+Addr = IO Device"/>
+    </comp>
+    <comp lib="8" loc="(76,782)" name="Text">
+      <a name="text" val="10xx: RAM"/>
+    </comp>
+    <comp lib="8" loc="(78,802)" name="Text">
+      <a name="text" val="01xx: ROM"/>
+    </comp>
+    <comp lib="8" loc="(84,701)" name="Text">
+      <a name="text" val="MEMORY R/W"/>
+    </comp>
+    <comp lib="8" loc="(99,753)" name="Text">
+      <a name="text" val="xx00: (MEM) WR"/>
     </comp>
     <comp loc="(1270,230)" name="IO_Sys">
       <a name="label" val="IO"/>
@@ -253,6 +289,9 @@
       <a name="width" val="8"/>
     </comp>
     <comp lib="1" loc="(230,130)" name="NOT Gate"/>
+    <comp lib="8" loc="(111,238)" name="Text">
+      <a name="text" val="8-bit tri state buffer"/>
+    </comp>
     <wire from="(120,170)" to="(230,170)"/>
     <wire from="(200,110)" to="(200,130)"/>
     <wire from="(200,110)" to="(250,110)"/>
@@ -867,6 +906,9 @@
     <comp lib="8" loc="(345,180)" name="Text">
       <a name="text" val="CTRL Bit 0 :: 0/1 = WR/RD"/>
     </comp>
+    <comp lib="8" loc="(413,211)" name="Text">
+      <a name="text" val="just crops 8-bit control into rd/wr based buffer"/>
+    </comp>
     <comp loc="(300,370)" name="tri_buffer"/>
     <wire from="(210,350)" to="(210,370)"/>
     <wire from="(210,370)" to="(270,370)"/>
@@ -911,6 +953,9 @@
       <a name="tristate" val="true"/>
     </comp>
     <comp lib="1" loc="(230,130)" name="NOT Gate"/>
+    <comp lib="8" loc="(165,253)" name="Text">
+      <a name="text" val="1-bit tri-state buffer"/>
+    </comp>
     <wire from="(120,170)" to="(230,170)"/>
     <wire from="(200,110)" to="(200,130)"/>
     <wire from="(200,110)" to="(250,110)"/>
